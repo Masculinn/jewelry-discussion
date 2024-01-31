@@ -1,40 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a [Next.js](https://nextjs.org/) Project built by Burak Bilen using OOP [React]('react.js)
 
 ## Getting Started
 
-First, run the development server:
+First, download node environment [by pressing this link]('https://nodejs.org/dist/v20.11.0/node-v20.11.0-x64.msi'):
+
+Second creating next.js project using Terminal 
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx create-next-app@latest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Third making the steps as follows
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Set the project name
+- TypeScript *No*
+- EsLint *No*
+- Tailwind CSS *Yes*
+- /src directory *Yes*
+- App Router *No*
+- Import alias *No*
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+_And then open the created folder into code editor_
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Executing project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Navigate to terminal and write
 
-## Learn More
+  ```bash
+  npm run dev
+  ```
+The project going to run on `localhost:3000` as default 
 
-To learn more about Next.js, take a look at the following resources:
+And then please clone the repository.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Implementing 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Firstly, create `.env.local` file at the top of the root of folder.
+- Secondly, write the API credentials that store application datas
 
-## Deploy on Vercel
+```bash
+NEXT_PUBLIC_SUPABASE_URL=https://krqbxwgmyzijzsjjukyo.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtycWJ4d2dteXppanpzamp1a3lvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDYxMjY0NzMsImV4cCI6MjAyMTcwMjQ3M30.LqWJMr7SfmanzJzpM3ngPf09j4yG5zt01H7GwTddi-8
+JWT_SECRET=vJnKCfvEFmKdxzFS6b622cS5/1S4D1RU4mVSTTV/TwAzyu8jtzyTfPF9+j5vQyh9IWZ5dJlTf5J5TBE05rlXwA==
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Conclusion 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+After making this all steps you should be able to have a root directory as
+
+```bash
+|-- .next
+|-- node_modules
+|-- public
+|-- src
+|-- .env.local
+|-- .gitignore
+|-- jsconfig.json
+|-- next.config.mjs
+|-- package.json
+|-- package-lock.json
+|-- postcss.config.js
+|-- tailwind.config.js
+|-- README.md
+```
+
+After implementing whole data and doing the appropriate hierarchy you can execute the code by writing `npm run dev`
+
