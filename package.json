@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.3",
+    "bulma": "^0.9.4",
+    "jwt-decode": "^4.0.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.49.3",
+    "react-markdown": "^9.0.1",
+    "react-timeago": "^7.2.0",
+    "sass": "^1.70.0",
+    "slugify": "^1.6.6",
+    "sweetalert2": "^11.10.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
